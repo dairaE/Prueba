@@ -24,8 +24,7 @@
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="_content/BlazorAnimate/blazorAnimateInterop.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="_content/BlazorQuery/jQuery.js"></script>
     <script src="_content/BlazorQuery/blazorQuery.js"></script>
     <script src="css/js/jquery.min.js"></script>
@@ -35,31 +34,34 @@
     <script src="css/js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
         AOS.init();
     </script>
 
-    <script>
-        function ishidden(el) {
-            return (el.offsetParent === null);
-        }
-    </script>
 
     <script>
-        function checkVisible(elm) {
-            var rect = elm.getBoundingClientRect();
-            var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-            return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+        function getclass() {
+            myID = document.getElementById("prue");
+            return String(myID.className);
         }
-    </script>
 
-    <script>
-        function scrollpos(element) {
-            return String(document.body.scrollLeft);
-        }
+        var myScrollFunc = function () {
+            myID = document.getElementById("prue");
+            var y = window.scrollY;
+            if (y >= 600) {
+                if (myID.className != "show v2") {
+                    $(document.getElementById('prue')).fadeIn(2000);
+                    myID.className = "show";
+                }
+                myID.className = "show v2";
+            } 
+        };
+
+        window.addEventListener("scroll", myScrollFunc);
 
         function scroll() {
-            return "asdfesdh";
+            window.addEventListener("scroll", myScrollFunc);
         }
     </script>
 

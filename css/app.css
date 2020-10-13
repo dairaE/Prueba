@@ -7323,3 +7323,11 @@ body.is-menu-visible #menu {
     overflow: visible;
     clip: auto
 }
+
+.mifade {
+    opacity: 0;
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -o-transition: opacity 2s;
+    transition: opacity 2s;
+}
