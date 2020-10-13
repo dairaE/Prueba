@@ -22,10 +22,12 @@
 <!-- Banner -->
 <section id="banner">
     <div class="inner">
-        <h1>VIVA EL VINO</h1>
-        <p>
-            kontua da nik inoiz ez dudala pornorik ikusten, aspaldi hartu nuen erabaki hori por principios morales eta horretan mantentzen naiz; kontua da jo en realidad es que te tengo muchisimo aprecio irune, benetan, no se de alguna manera me encantas, zintzotasun osoz, eta ez dakit lagun moduan, argazkiren bat bidaliko zenidakeen
-        </p>
+        <Animate Animation="Animations.FadeIn" Duration="TimeSpan.FromSeconds(1)">
+            <h1 @onclick="prueba">VIVA EL VINO</h1>
+            </Animate>
+            <p>
+                kontua da nik inoiz ez dudala pornorik ikusten, aspaldi hartu nuen erabaki hori por principios morales eta horretan mantentzen naiz; kontua da jo en realidad es que te tengo muchisimo aprecio irune, benetan, no se de alguna manera me encantas, zintzotasun osoz, eta ez dakit lagun moduan, argazkiren bat bidaliko zenidakeen
+            </p>
     </div>
     <video autoplay loop muted playsinline src="./css/images/la-zowi-albany-sugar-mami.mp4"></video>
 </section>
@@ -81,7 +83,6 @@
         </div>
     </div>
 
-
 <section class="wrapper">
     <div class="inner">
         <header class="special">
@@ -131,98 +132,99 @@
     </div>
 </section>
 
-<!-- Testimonials -->
-<section class="wrapper">
-    <div class="inner">
-        <header class="special">
-            <h2>Tu opinión nos importa</h2>
-            <p>Preferiría tener una rata al hombro que una rata. ¿Entendemos?</p>
-        </header>
-        <div class="testimonials">
-            <section>
-                <div class="content">
-                    <blockquote>
-                        <p>Hola buenas, taxi. ¿Nos podrías venir a buscar al camino de las brujas encantadas de llanes?</p>
-                    </blockquote>
-                    <div class="author">
-                        <div class="image">
-                            <img src="./css/images/lydrio.jpeg" alt="" />
-                        </div>
-                        <p class="credit">- <strong>Lydrio</strong> <span>Una faraona.</span></p>
+<div id="prue" class="hide" @onclick="CheckChanged">
+        <!-- Testimonials -->
+        <section class="wrapper">
+            <div class="inner">
+                    <header class="special">
+                        <h2>Tu opinión nos importa</h2>
+                        <p>Preferiría tener una rata al hombro que una rata. ¿Entendemos?</p>
+                    </header>
+                    <div class="testimonials">
+                        <section>
+                            <div class="content">
+                                <blockquote>
+                                    <p>Hola buenas, taxi. ¿Nos podrías venir a buscar al camino de las brujas encantadas de llanes?</p>
+                                </blockquote>
+                                <div class="author">
+                                    <div class="image">
+                                        <img src="./css/images/lydrio.jpeg" alt="" />
+                                    </div>
+                                    <p class="credit">- <strong>Lydrio</strong> <span>Una faraona.</span></p>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="content">
+                                <blockquote>
+                                    <p>Melyssa es un juegou. Estábamos jugando yo no quiego a nadie melyssa yo te quiego a ti.</p>
+                                </blockquote>
+                                <div class="author">
+                                    <div class="image">
+                                        <img src="./css/images/tom.jpg" alt="" />
+                                    </div>
+                                    <p class="credit">- <strong>Tom Brusse</strong> <span>Asqueroso.</span></p>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="content">
+                                <blockquote>
+                                    <p>Soy tu final, Satanás, soy tu final, Satanás. Soy tu final, soy tu final. ¿Quién eres tú? Tu final, Satanás. Tienes las horas contadas, tontito.  </p>
+                                </blockquote>
+                                <div class="author">
+                                    <div class="image">
+                                        <img src="./css/images/bruj.jpg" alt="" />
+                                    </div>
+                                    <p class="credit">- <strong>Señora Brujitos</strong> <span>Referente.</span></p>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                </div>
-            </section>
-            <section>
-                <div class="content">
-                    <blockquote>
-                        <p>Melyssa es un juegou. Estábamos jugando yo no quiego a nadie melyssa yo te quiego a ti.</p>
-                    </blockquote>
-                    <div class="author">
-                        <div class="image">
-                            <img src="./css/images/tom.jpg" alt="" />
-                        </div>
-                        <p class="credit">- <strong>Tom Brusse</strong> <span>Asqueroso.</span></p>
+                    <div class="testimonials">
+                        <section>
+                            <div class="content">
+                                <blockquote>
+                                    <p>Los que subís canciones de ayax y prok sólo porque os gusta el ritmo merecéis que os peguen, o los que dicen "la filosofía es una mierda, no vale para nada..." etc.</p>
+                                </blockquote>
+                                <div class="author">
+                                    <div class="image">
+                                        <img src="./css/images/bruj.jpg" alt="" />
+                                    </div>
+                                    <p class="credit">- <strong>Ane Fields</strong> <span>Alternativa.</span></p>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="content">
+                                <blockquote>
+                                    <p>La mayoría dice: "es ilegal porque es una droga peligrosa que destruye a las familias" MENTIRA, es ilegal porque cura el cáncer, anorexia, glaucoma, depresión...</p>
+                                </blockquote>
+                                <div class="author">
+                                    <div class="image">
+                                        <img src="./css/images/bruj.jpg" alt="" />
+                                    </div>
+                                    <p class="credit">- <strong>Iou Velarra</strong> <span>Sativa Weed.</span></p>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="content">
+                                <blockquote>
+                                    <p>Baaa ezdakiit nolaa ibiliko uain errioxan nao ta ezdakit iual murciare jungo naiz ta naparrurare naet jun😅😅 </p>
+                                </blockquote>
+                                <div class="author">
+                                    <div class="image">
+                                        <img src="./css/images/bruj.jpg" alt="" />
+                                    </div>
+                                    <p class="credit">- <strong>Danel</strong> <span>Tremendo comecojones.</span></p>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                </div>
-            </section>
-            <section>
-                <div class="content">
-                    <blockquote>
-                        <p>Soy tu final, Satanás, soy tu final, Satanás. Soy tu final, soy tu final. ¿Quién eres tú? Tu final, Satanás. Tienes las horas contadas, tontito.  </p>
-                    </blockquote>
-                    <div class="author">
-                        <div class="image">
-                            <img src="./css/images/bruj.jpg" alt="" />
-                        </div>
-                        <p class="credit">- <strong>Señora Brujitos</strong> <span>Referente.</span></p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="testimonials">
-            <section>
-                <div class="content">
-                    <blockquote>
-                        <p>Los que subís canciones de ayax y prok sólo porque os gusta el ritmo merecéis que os peguen, o los que dicen "la filosofía es una mierda, no vale para nada..." etc.</p>
-                    </blockquote>
-                    <div class="author">
-                        <div class="image">
-                            <img src="./css/images/bruj.jpg" alt="" />
-                        </div>
-                        <p class="credit">- <strong>Ane Fields</strong> <span>Alternativa.</span></p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="content">
-                    <blockquote>
-                        <p>La mayoría dice: "es ilegal porque es una droga peligrosa que destruye a las familias" MENTIRA, es ilegal porque cura el cáncer, anorexia, glaucoma, depresión...</p>
-                    </blockquote>
-                    <div class="author">
-                        <div class="image">
-                            <img src="./css/images/bruj.jpg" alt="" />
-                        </div>
-                        <p class="credit">- <strong>Iou Velarra</strong> <span>Sativa Weed.</span></p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="content">
-                    <blockquote>
-                        <p>Baaa ezdakiit nolaa ibiliko uain errioxan nao ta ezdakit iual murciare jungo naiz ta naparrurare naet jun😅😅 </p>
-                    </blockquote>
-                    <div class="author">
-                        <div class="image">
-                            <img src="./css/images/bruj.jpg" alt="" />
-                        </div>
-                        <p class="credit">- <strong>Danel</strong> <span>Tremendo comecojones.</span></p>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-</section>
-
+            </div>
+        </section>
+</div>
 <!-- Footer -->
 <footer id="footer">
     <div class="inner">
@@ -266,17 +268,36 @@
     public int ScrollTop { get; set; }
     public bool hidden { get; set; } = false;
     public int position { get; set; }
-
-    private async Task OnScroll(EventArgs e)
+    private Animate myAnim;
+    /*
+    private void RunAnimation()
     {
-        ScrollTop = await JSRuntime.InvokeAsync<int>(
-           "eval", "document.getElementById('myDiv').scrollTop");
+        myAnim.Run();
     }
+    */
+    private async Task CheckChanged()
+    {
+        var e = await JSRuntime.InvokeAsync<string>("getclass");
+        if (e == "bottomMenu show")
+        {
+            //RunAnimation();
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JSRuntime.InvokeVoidAsync("scroll");
+        var e = await JSRuntime.InvokeAsync<string>("getclass");
+        if(e == "show")
+        {
+            //RunAnimation();
+        }
+    }
+
 
     public async Task prueba()
     {
-        var o = await JSRuntime.InvokeAsync<string>("scroll", "todo");
-        string e = o.ToString();
+        await JSRuntime.InvokeVoidAsync("scroll");
     }
 
 
