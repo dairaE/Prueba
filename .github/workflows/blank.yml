@@ -12,13 +12,13 @@ jobs:
        uses: actions/setup-dotnet@v1.6.0
        with:
         dotnet-version: 3.1
-     - name: Add .nojekyll file
-       run: touch release/wwwroot/.nojekyll
      - name: Publish .NET Core Project
        run: dotnet publish ./Prueba/Prueba.csproj -c Release -o release --nologo
       # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
      - name: Change base-tag in index.html from / to Prueba
        run: sed -i 's/<base href="\/" \/>/<base href="\/Prueba\/" \/>/g' release/wwwroot/index.html
+     - name: Add .nojekyll file
+       run: touch release/wwwroot/.nojekyll
      - name: Commit wwwroot to GitHub Pages
        uses: JamesIves/github-pages-deploy-action@3.5.9
        with:
