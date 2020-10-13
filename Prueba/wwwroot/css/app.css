@@ -3286,6 +3286,18 @@ body.is-preload #banner:before {
     z-index: 1;
 }
 
+#cta2 {
+    background-color: dimgrey;
+    color: rgba(255, 255, 255, 0.75);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
     #cta input, #cta select, #cta textarea {
         color: #ffffff;
     }
